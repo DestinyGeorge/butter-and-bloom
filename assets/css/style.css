@@ -19,7 +19,8 @@
 
 body{
     font-family: var(--primary-font);
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
+    color: var(--neutral-color-dark);
 }
 
 
@@ -28,4 +29,17 @@ h1{
    color: var(--primary-color-base);
 }
 
+/* Navbar */
+#navbar{
+    background-color: var(--primary-color-light);
+}
+
+#nav-logo{
+    height: 40px;
+    width: auto;
+}   
+
+/* .navbar-brand{
+    font-family: var(--secondary-font);
+} */
 
