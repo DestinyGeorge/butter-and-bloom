@@ -96,8 +96,18 @@ h2{
 
 /*  Header */
 
+.hero {
+    height: 100vh; /*full screen height */
+    /* width: 100%; */
+    background-image: url('../images/hero-image.png');
+    background-size: cover; /* makes image cover the whole hero */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* display: flex;
+    align-items: center; */
 
 
+}
 /* Footer */
 #footer{
     background-color: var(--primary-color-light);
@@ -156,3 +166,24 @@ h2{
     border: 2px solid white;
     background-color: lightgray;
 } */
+
+/* Media queries */
+/* @media (max-aspect-ratio: 3/4) {
+  .hero {
+    background-size: contain;
+    background-color: #fdf8f2;
+    background-repeat: no-repeat;
+  }
+} */
+
+@media (max-height: 700px) {
+  .hero {
+    height: 80vh;
+  }
+}
+
+@media (max-height: 550px) {
+  .hero {
+    height: 65vh;
+}
+}
