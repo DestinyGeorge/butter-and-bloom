@@ -29,6 +29,24 @@ h1{
    color: var(--primary-color-base);
 }
 
+h1,
+h2{
+    text-transform: uppercase;
+}
+
+h2{
+    margin-bottom: 2rem;
+}
+
+.sub-heading-color{
+    color: var(--secondary-color-base);
+}
+
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 /* Navbar */
 #navbar{
     background-color: var(--primary-color-light);
@@ -43,3 +61,62 @@ h1{
     font-family: var(--secondary-font);
 } */
 
+
+/* Footer */
+#footer{
+    background-color: var(--primary-color-light);
+    color: white;
+    padding-bottom: 3rem;
+}
+
+#footer .sub-heading-color{
+    color: var(--secondary-color-base);
+    color: var(--neutral-color-light);
+}
+
+
+
+#footer i{
+    color: var(--secondary-color-base);
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+#footer .social-links i{
+    color: var(--neutral-color-light);
+    font-size: 2rem;
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+#footer .social-links i:hover{
+    color: var(--secondary-color-base);
+}
+
+#footer .quick-links li{
+    list-style:none;
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+#footer .quick-links a{
+    color: var(--neutral-color-light);
+    text-decoration: none;
+}
+
+#footer .quick-links a:hover{
+    color: var(--secondary-color-base);
+    
+}
+
+/* grid visualisation CSS for testing */
+
+/* .container,
+.row {
+    border: 2px solid black;
+}
+
+.col-12 {
+    border: 2px solid white;
+    background-color: lightgray;
+} */
