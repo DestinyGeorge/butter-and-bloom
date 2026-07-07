@@ -40,13 +40,14 @@ h1{
    color: var(--primary-color-base);
 }
 
-h1,
+/* h1, */
 h2{
     text-transform: uppercase;
 }
 
 h2{
     margin-bottom: 2rem;
+    color: var(--primary-color-base);
 }
 
 .sub-heading-color{
@@ -56,6 +57,14 @@ h2{
 .section {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.bg-color-green{
+    background-color: rgba(181, 213, 198, 0.35);
+}
+
+.bg-color-brown{
+    background-color: rgba(150, 105, 25, 0.35) ;
 }
 
 /* Buttons */
