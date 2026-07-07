@@ -13,6 +13,17 @@
     --neutral-color-light: #FFFFFF; /*White*/
     --neutral-color-dark: #2F2F2F; /* Charcoal Grey */
     --neutral-color-soft: #F2F2F2; /* Soft Grey */
+
+    /* Primary – Golden Brown Soft Equivalents */
+    --primary-color-base-soft: #D9CDBF;   /* Deep Golden Brown Soft */
+    --primary-color-light-soft: #E6DCCF;  /* Light Golden Brown Soft */
+
+    /* Secondary – Botanical Green Soft Equivalents */
+    --secondary-color-base-soft: #E2EEE9; /* Soft Botanical Green Soft */
+    --secondary-color-dark-soft: #D7E7E2; /* Muted Botanical Green Soft */
+
+    /* Accent – Cherry Red Soft Equivalent */
+    --accent-color-base-soft: #E3C5CC;    /* Cherry Red Soft */
 }
 
 /* Global Styles */
@@ -47,6 +58,19 @@ h2{
     margin-bottom: 2rem;
 }
 
+/* Buttons */
+.custom-cta-button{
+    border: 2px solid var(--accent-color-base);
+    background-color: var(--accent-color-base);
+    color: white;
+}
+
+.custom-cta-button:hover{
+    border: 2px solid rgba(168, 50, 70, 0.35);
+    background-color: rgba(168, 50, 70, 0.55);
+    color: white;
+}
+
 /* Navbar */
 #navbar{
     background-color: var(--primary-color-light);
@@ -60,6 +84,9 @@ h2{
 /* .navbar-brand{
     font-family: var(--secondary-font);
 } */
+
+/*  Header */
+
 
 
 /* Footer */
