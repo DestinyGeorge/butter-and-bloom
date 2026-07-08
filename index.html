@@ -14,6 +14,9 @@
     <!-- Bootstrap 5 CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- Swiper CSS CDN Link -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -79,31 +82,33 @@
                     <div class="col-12 text-center">
                         <h2 class="display-6">Featured Items</h2>
                     </div>
-                    <div id="featured-items" class="col-12">
-                        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img src="assets/images/home/featured-items-cake.png" class=" featured-img d-block w-100" alt="2 tier floral Cake">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="assets/images/home/featured-items-cheesecake.jpg" class=" featured-img d-block w-100" alt="Strawberry Cheesecake">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="assets/images/home/featured-items-cookies.png" class=" featured-img d-block w-100" alt="Iced floral cookies">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                        </div>
+                    
+                    <!-- Carousel -->
+                    <div class="col-12">
+                        
+                        <div class="swiper expanding-swiper">
+                            <div class="swiper-wrapper">
 
+                                <div class="swiper-slide">
+                                <img src="assets/images/home/featured-items-cake.png" class="expanding-img">
+                                </div>
+
+                                <div class="swiper-slide">
+                                <img src="assets/images/home/featured-items-cheesecake.jpg" class="expanding-img">
+                                </div>
+
+                                <div class="swiper-slide">
+                                <img src="assets/images/home/featured-items-cookies.png" class="expanding-img">
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
 
                     </div>
+
                 </div>
             </div>
         </section>
@@ -220,6 +225,27 @@
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/3a3514d451.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+    new Swiper(".expanding-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            768: { slidesPerView: 2 },
+            992: { slidesPerView: 3 },
+        }
+    });
+</script>
+
+
+
     
 </body>
 </html>

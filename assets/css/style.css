@@ -124,7 +124,7 @@ h2{
 }
 
 /* Featured Items section */
-.featured-img {
+.expanding-img {
   width: 100%;
   aspect-ratio: 1 / 1;   /* forces a perfect square */
   object-fit: cover;      /* crops the image to fill the square */
