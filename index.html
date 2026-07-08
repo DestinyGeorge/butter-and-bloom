@@ -85,7 +85,7 @@
                     
                     <!-- Carousel -->
                     <div class="col-12">
-                        
+
                         <div class="swiper expanding-swiper">
                             <div class="swiper-wrapper">
 
@@ -233,14 +233,27 @@
     new Swiper(".expanding-swiper", {
         slidesPerView: 1,
         spaceBetween: 10,
+        speed: 600, // smoother transitions
+        effect: "slide",
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        autoplay: {
+            delay: 3000, // 3 seconds
+            disableOnInteraction: false
+        },
         breakpoints: {
             768: { slidesPerView: 2 },
             992: { slidesPerView: 3 },
+        },
+        on: { /*Pause on hover*/
+        init() {
+            const swiperEl = this.el;
+            swiperEl.addEventListener("mouseenter", () => this.autoplay.stop());
+            swiperEl.addEventListener("mouseleave", () => this.autoplay.start());
         }
+}
     });
 </script>
 

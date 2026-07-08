@@ -124,6 +124,11 @@ h2{
 }
 
 /* Featured Items section */
+
+.swiper-wrapper {
+  transition-timing-function: ease-in-out !important; /*makes transition more like a bootstrap carousel*/
+}
+
 .expanding-img {
   width: 100%;
   aspect-ratio: 1 / 1;   /* forces a perfect square */
@@ -131,6 +136,14 @@ h2{
   object-position: center; /* keeps the crop centered */
   border-radius: 8px;     /* optional, for softer edges */
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--neutral-color-light);
+  /* font-size: 20px; */
+} 
+
+
 
 /* Footer */
 #footer{
