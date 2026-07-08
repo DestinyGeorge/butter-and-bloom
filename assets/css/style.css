@@ -105,9 +105,22 @@ h2{
     background-repeat: no-repeat;
     /* display: flex;
     align-items: center; */
-
-
 }
+
+.hero-container{
+    background-color: #F2F2F2;
+    background-color: rgba(242, 242, 242, 0.5);
+    width: 40%;
+    height: auto;
+    left: 2%;
+    top: 5%;
+}
+
+.hero-content{
+    height: 100%;
+    margin: 2rem 0;
+}
+
 /* Footer */
 #footer{
     background-color: var(--primary-color-light);
@@ -176,14 +189,30 @@ h2{
   }
 } */
 
-@media (max-height: 700px) {
+/* @media (max-height: 700px) {
   .hero {
     height: 80vh;
   }
 }
 
 @media (max-height: 550px) {
-  .hero {
+    .hero {
     height: 65vh;
+  }
+    
+} */
+
+/* Extra small devices (tablets, 576px and below) */
+@media screen and (max-width: 576px) {
+    .hero-container{
+        min-width: 200px;
+        
+    }
 }
+/* Extra Large devices ( 1200px and below) */
+@media screen and (min-width: 1200px) {
+    .hero-container{
+        margin: 4rem;
+        
+    }
 }
