@@ -130,10 +130,34 @@
 
         <!-- Seasonal Items section -->
         <section class="bg-color-green">
-            <div class="container section "></div>
+            <div class="container section ">
                 <div class="row">
                     <div class="col-12 text-center">
                         <h2 class="display-6">Seasonal Highlights</h2>
+                    </div>
+                    <div class="col-12">
+
+                        <div class="swiper seasonal-swiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                <img src="assets/images/home/seasonal-highlights-cake.jpg" class="expanding-img">
+                                </div>
+
+                                <div class="swiper-slide">
+                                <img src="assets/images/home/seasonal-highlights-raspberry-cheesecake.png" class="expanding-img">
+                                </div>
+
+                                <div class="swiper-slide">
+                                <img src="assets/images/home/seasonal-highlights-blondies.png" class="expanding-img">
+                                </div>
+
+                            </div>
+
+                            <div class="seasonal-prev"></div>
+                            <div class="seasonal-next"></div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -252,10 +276,34 @@
             const swiperEl = this.el;
             swiperEl.addEventListener("mouseenter", () => this.autoplay.stop());
             swiperEl.addEventListener("mouseleave", () => this.autoplay.start());
-        }
-}
+        } 
+    }
     });
-</script>
+
+    new Swiper(".seasonal-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 600,
+        effect: "slide",
+
+        navigation: {
+            nextEl: ".seasonal-next",
+            prevEl: ".seasonal-prev",
+        },
+
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
+
+        breakpoints: {
+            768: { slidesPerView: 2 },
+            992: { slidesPerView: 3 },
+        }
+    });
+
+    
+    </script>
 
 
 
