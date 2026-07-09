@@ -57,6 +57,13 @@ h2{
 .text-color-green{
     color: var(--secondary-color-base);
 }
+.text-color-brown{
+    color: var(--primary-color-base);
+}
+
+.text-color-red{
+    color: var(--accent-color-base);
+}
 
 .section {
     margin-top: 2rem;
@@ -146,6 +153,16 @@ h2{
   color: var(--neutral-color-light);
   /* font-size: 20px; */
 } 
+
+
+/* Menu */
+
+.menu-mini-nav .nav-link{
+
+    text-decoration: none;
+    color: var(--primary-color-base);
+
+}
 
 
 
