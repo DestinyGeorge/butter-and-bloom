@@ -252,6 +252,24 @@
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/3a3514d451.js" crossorigin="anonymous"></script>
+
+    <script>
+    // Get today's date
+    const today = new Date();
+
+    // Add 1 day so users cannot select today
+    today.setDate(today.getDate() + 1);
+
+    // Format as YYYY-MM-DD
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, "0");
+    const dd = String(today.getDate()).padStart(2, "0");
+
+    const minDate = `${yyyy}-${mm}-${dd}`;
+
+    // Apply to your date picker
+    document.getElementById("event-date").setAttribute("min", minDate);
+    </script>
     
 </body>
 </html>
