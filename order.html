@@ -44,7 +44,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 text-center">
                 <h1 class="display-3">Order Enquiry</h1>
-                <div class="my-4">
+                <div class="mt-4">
                     <p>Whether you’re celebrating a birthday, hosting an event, or gifting something sweet, we’d love to bake for you. Share your ideas, colours, flavours, and inspiration — we’ll craft a bespoke creation made fresh to order.</p>
                     
                     <p>Once we receive your enquiry, we’ll review the details and get back to you with a personalised quote and timeline.</p>
@@ -63,101 +63,113 @@
                     <form action="success.html" method="GET">
                         <div class="row">
                             <!-- Customer Details section of form -->
-                            <h3> Customer Details</h3>
+                            <div class="section">
+                                <h3> Customer Details</h3>
 
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="full-name" class="form-label">Full Name</label>
-                                <input class="form-control" id="full-name" name="full-name" type="text" required>
-                            </div>
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input class="form-control" id="email" name="email" type="email" required>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <label for="phone-number" class="form-label">Phone number</label>
-                                <input class="form-control" id="phone-number" name="phone-number" type="number" required>
+                                <div class="col-12 col-lg-6 mb-3">
+                                    <label for="full-name" class="form-label">Full Name</label>
+                                    <input class="form-control" id="full-name" name="full-name" type="text" required>
+                                </div>
+                                <div class="col-12 col-lg-6 mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input class="form-control" id="email" name="email" type="email" required>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="phone-number" class="form-label">Phone number</label>
+                                    <input class="form-control" id="phone-number" name="phone-number" type="number" required>
+                                </div>
                             </div>
 
                             <!-- Order Type section of form -->
-                            <h3> Order Type</h3>
+                            <div class="section">
+                                <h3> Order Type</h3>
 
-                            <div class="col-12 mb-3">
-                                <label for="order-type" class="form-label">Order type</label>
-                                <select id="order-type" class="form-select" name="order-type" required>
-                                    <option value="" selected>Select</option>
-                                    <option value="cake">Cake</option>
-                                    <option value="cupcake">Cupcake</option>
-                                    <option value="cookie">Cookie</option>
-                                    <option value="traybake">Traybake</option>
-                                    <option value="loaf">Loaf</option>
-                                    <option value="cheesecake">Cheesecake</option>
-                                    <option value="gift-box">Gift Box</option>
-                                    <option value="seasonal">Seasonal</option>
-                                </select>
+                                <div class="col-12 mb-3">
+                                    <label for="order-type" class="form-label">Order type</label>
+                                    <select id="order-type" class="form-select" name="order-type" required>
+                                        <option value="" selected>Select</option>
+                                        <option value="cake">Cake</option>
+                                        <option value="cupcake">Cupcake</option>
+                                        <option value="cookie">Cookie</option>
+                                        <option value="traybake">Traybake</option>
+                                        <option value="loaf">Loaf</option>
+                                        <option value="cheesecake">Cheesecake</option>
+                                        <option value="gift-box">Gift Box</option>
+                                        <option value="seasonal">Seasonal</option>
+                                    </select>
+                                </div>
                             </div>
 
                             <!-- Event Details section of form -->
-                            <h3> Event Details</h3>
+                            <div class="section">
+                                <h3> Event Details</h3>
 
-                            <div class="col-12 mb-3">
-                                <label for="occasion" class="form-label">Occasion</label>
-                                <input class="form-control" id="occasion" name="occasion" type="text" required>
-                            </div>
+                                <div class="col-12 mb-3">
+                                    <label for="occasion" class="form-label">Occasion</label>
+                                    <input class="form-control" id="occasion" name="occasion" type="text" required>
+                                </div>
 
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="event-date" class="form-label">Event Date</label>
-                                <input class="form-control" id="event-date" name="event-date" type="date" required>
-                            </div>
+                                <div class="col-12 col-lg-6 mb-3">
+                                    <label for="event-date" class="form-label">Event Date</label>
+                                    <input class="form-control" id="event-date" name="event-date" type="date" required>
+                                </div>
 
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="collection-method" class="form-label">Collection or Delivery</label>
-                                <select id="collection-method" class="form-select" name="collection-method" required>
-                                    <option value="" selected>Select</option>
-                                    <option value="collection">Collection</option>
-                                    <option value="delivery">Delivery</option>
-                                </select>
-                            </div>
+                                <div class="col-12 col-lg-6 mb-3">
+                                    <label for="collection-method" class="form-label">Collection or Delivery</label>
+                                    <select id="collection-method" class="form-select" name="collection-method" required>
+                                        <option value="" selected>Select</option>
+                                        <option value="collection">Collection</option>
+                                        <option value="delivery">Delivery</option>
+                                    </select>
+                                </div>
 
-                            <div class="col-12 mb-3">
-                                <label for="time" class="form-label">Preferred Time</label>
-                                <input class="form-control" id="time" name="time" type="time" required>
+                                <div class="col-12 mb-3">
+                                    <label for="time" class="form-label">Preferred Time</label>
+                                    <input class="form-control" id="time" name="time" type="time" required>
+                                </div>
                             </div>
 
 
                             <!-- Product Details section of form -->
-                            <h3> Product Details</h3>
+                            <div class="section">
+                                <h3> Product Details</h3>
 
-                            <div class="col-12 mb-3">
-                                <label for="size" class="form-label">Size / Quantity</label>
-                                <input class="form-control" id="size" name="size" type="text" required>
-                            </div>
+                                <div class="col-12 mb-3">
+                                    <label for="size" class="form-label">Size / Quantity</label>
+                                    <input class="form-control" id="size" name="size" type="text" required>
+                                </div>
 
-                            <div class="col-12 mb-3">
-                                <label for="description" class="form-label">Design Description</label>
-                                <textarea class="form-control" rows="6" id="description" name="description" required></textarea>
+                                <div class="col-12 mb-3">
+                                    <label for="description" class="form-label">Design Description</label>
+                                    <textarea class="form-control" rows="6" id="description" name="description" required></textarea>
+                                </div>
                             </div>
 
                             <!-- Budget section of form -->
-                            <h3> Budget</h3>
+                            <div class="section">
+                                <h3> Budget</h3>
 
-                            <div class="col-12 mb-3">
-                                <label for="budget (£)" class="form-label">Budget</label>
-                                <input class="form-control" id="budget" name="budget" type="text" required>
+                                <div class="col-12 mb-3">
+                                    <label for="budget (£)" class="form-label">Budget</label>
+                                    <input class="form-control" id="budget" name="budget" type="text" required>
+                                </div>
                             </div>
 
                             <!-- Allergens Details section of form -->
-                            <h3> Allergens</h3>
-
-                            <div class="col-12 mb-3">
-                                <label for="allergies" class="form-label">Allergens</label>
-                                <input class="form-control" id="allergies" name="allergies" type="text" required>
+                            <div class="section">
+                                <h3> Allergens</h3>
+                                
+                                <div class="col-12 mb-3">
+                                    <label for="allergies" class="form-label">Allergens</label>
+                                    <input class="form-control" id="allergies" name="allergies" type="text" required>
+                                </div>
                             </div>
 
                         </div>
 
                         
 
-                        <button type="submit" class="btn custom-cta-button mb-4">Submit</button>
+                        <button type="submit" class="btn custom-cta-button mt-4 mb-4">Submit</button>
                     </form>
                 </div>
             </div>

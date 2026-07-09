@@ -145,6 +145,18 @@ h2{
 
 
 
+/* Order Page */
+
+#order-form h3{
+    margin-bottom: 2rem;
+}
+
+#order-form .section{
+    margin-top: 1.5rem;
+}
+
+
+
 /* Footer */
 #footer{
     background-color: var(--primary-color-light);
