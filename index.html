@@ -15,7 +15,11 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- Swiper CSS CDN Link -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+        />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -137,7 +141,7 @@
                     </div>
                     <div class="col-12">
 
-                        <div class="swiper seasonal-swiper">
+                        <div class="swiper expanding-swiper seasonal-swiper">
                             <div class="swiper-wrapper">
 
                                 <div class="swiper-slide">
@@ -154,8 +158,10 @@
 
                             </div>
 
-                            <div class="seasonal-prev"></div>
-                            <div class="seasonal-next"></div>
+                            <!-- <div class="seasonal-prev"></div>
+                            <div class="seasonal-next"></div> -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
 
                     </div>
@@ -252,12 +258,14 @@
 
     <!-- Swiper JS CDN Link -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
 
     <script>
     new Swiper(".expanding-swiper", {
         slidesPerView: 1,
         spaceBetween: 10,
         speed: 600, // smoother transitions
+        loop: true,
         effect: "slide",
         navigation: {
             nextEl: ".swiper-button-next",
@@ -271,38 +279,7 @@
             768: { slidesPerView: 2 },
             992: { slidesPerView: 3 },
         },
-        on: { /*Pause on hover*/
-        init() {
-            const swiperEl = this.el;
-            swiperEl.addEventListener("mouseenter", () => this.autoplay.stop());
-            swiperEl.addEventListener("mouseleave", () => this.autoplay.start());
-        } 
-    }
     });
-
-    new Swiper(".seasonal-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        speed: 600,
-        effect: "slide",
-
-        navigation: {
-            nextEl: ".seasonal-next",
-            prevEl: ".seasonal-prev",
-        },
-
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false
-        },
-
-        breakpoints: {
-            768: { slidesPerView: 2 },
-            992: { slidesPerView: 3 },
-        }
-    });
-
-    
     </script>
 
 
