@@ -79,6 +79,8 @@
 
                             </div>
 
+                            <div class="swiper-pagination"></div>
+
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                         </div>
@@ -110,6 +112,8 @@
                             </div>
 
                         </div>
+
+                        <div class="swiper-pagination"></div>
 
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
@@ -191,19 +195,46 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script>
-    new Swiper(".expanding-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        speed: 600, // smoother transitions
-        effect: "slide",
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            // 768: { slidesPerView: 2 },
-            992: { slidesPerView: 2 },
-        }
+
+    
+    // new Swiper(".expanding-swiper", {
+    //     slidesPerView: 1,
+    //     spaceBetween: 10,
+    //     speed: 600, // smoother transitions
+    //     effect: "slide",
+    //     pagination: {
+    //         el: '.swiper-pagination',
+    //     },
+    //     navigation: {
+    //         nextEl: ".swiper-button-next",
+    //         prevEl: ".swiper-button-prev",
+    //     },
+    //     breakpoints: {
+    //         // 768: { slidesPerView: 2 },
+    //         992: { slidesPerView: 2 },
+    //     }
+    // });
+
+    const swipers = document.querySelectorAll('.expanding-swiper');
+
+    swipers.forEach((sliderElement) => {
+        new Swiper(sliderElement, {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            speed: 600,
+            effect: "slide",
+            pagination: {
+                el: sliderElement.querySelector('.swiper-pagination'),
+                clickable: true,
+            },
+            navigation: {
+                nextEl: sliderElement.querySelector('.swiper-button-next'),
+                prevEl: sliderElement.querySelector('.swiper-button-prev'),
+            },
+            breakpoints: {
+                992: { slidesPerView: 2 },
+            }
+        });
     });
     </script>
 

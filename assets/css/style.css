@@ -148,6 +148,18 @@ h2{
   border-radius: 8px;     /* optional, for softer edges */
 }
 
+/* Default bullet colour */
+.swiper-pagination-bullet {
+    background-color: var(--neutral-color-light); /* Golden Brown or any brand colour */
+    opacity: 0.4;
+}
+
+/* Active bullet colour */
+.swiper-pagination-bullet-active {
+    background-color: var(--accent-color-base) /* Cherry Red or any brand colour */
+    
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--neutral-color-light);
