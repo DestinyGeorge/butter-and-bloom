@@ -157,6 +157,11 @@ h2{
     color: var(--primary-color-base);
 }
 
+.page-bottom-cta{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
 /* Featured Items section */
 
 .swiper-wrapper {
