@@ -200,21 +200,10 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        autoplay: {
-            delay: 3000, // 3 seconds
-            disableOnInteraction: false
-        },
         breakpoints: {
             // 768: { slidesPerView: 2 },
             992: { slidesPerView: 2 },
-        },
-        on: { /*Pause on hover*/
-        init() {
-            const swiperEl = this.el;
-            swiperEl.addEventListener("mouseenter", () => this.autoplay.stop());
-            swiperEl.addEventListener("mouseleave", () => this.autoplay.start());
-        } 
-    }
+        }
     });
     </script>
 
