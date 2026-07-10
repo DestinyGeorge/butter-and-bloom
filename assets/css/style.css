@@ -70,8 +70,10 @@ h2{
 }
 
 .section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    /* margin-top: 2rem;
+    margin-bottom: 2rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .bg-color-green{
@@ -138,6 +140,23 @@ h2{
     margin: 2rem 0;
 }
 
+/* About Us Section */
+
+.subscribe-button{
+    border: 2px solid rgba(181, 213, 198, 0.55);
+    /* background-color: rgba(181, 213, 198, 0.55); */
+    color: var(--primary-color-base);
+    transition: color 0.3s ease-in-out;
+}
+
+.subscribe-button:hover{
+    /* border: 2px solid rgba(150, 105, 25, 0.35);
+    background-color: rgba(150, 105, 25, 0.35); */
+    border: 2px solid rgba(181, 213, 198, 0.55);
+    background-color: rgba(181, 213, 198, 0.55);
+    color: var(--primary-color-base);
+}
+
 /* Featured Items section */
 
 .swiper-wrapper {
@@ -169,6 +188,55 @@ h2{
   color: var(--neutral-color-light);
   /* font-size: 20px; */
 } 
+
+
+/* Testimonials */
+.testimonial-card {
+    background: var(--neutral-color-soft);
+    border-radius: 12px;
+    padding: 1.8rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    height: 100%;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+}
+
+.testimonial-name {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #966919; /* your warm golden brown */
+}
+
+/* Pagination styling */
+.testimonial-swiper .swiper-pagination-bullet {
+    background-color: #d9c7a3; /* soft golden */
+}
+
+.testimonial-swiper .swiper-pagination-bullet-active {
+    background-color: #966919; /* deeper golden */
+}
+
+/* Make each slide stretch */
+.testimonial-swiper .swiper-slide {
+    height: auto; 
+    display: flex;
+}
+
+/* Make each card fill the slide */
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Ensure text grows and name sits at bottom */
+.testimonial-text {
+    flex: 1;
+}
 
 
 /* Menu */
@@ -274,6 +342,14 @@ h2{
 #footer .quick-links a:hover{
     color: var(--secondary-color-base);
     
+}
+
+.modal-content{
+    background-color: var(--secondary-color-base-soft);
+}
+
+.modal-title{
+    font-family: var(--primary-font);
 }
 
 /* grid visualisation CSS for testing */

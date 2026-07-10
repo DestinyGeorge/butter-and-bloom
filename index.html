@@ -75,8 +75,17 @@
                     <p>
                         At Butter & Bloom, every bake begins with simple ingredients, thoughtful technique, and a love for beautiful presentation. From golden‑brown pastries to soft botanical‑inspired cakes, our creations are designed to bring comfort, joy, and a touch of elegance to your day.
                     </p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn my-4 subscribe-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Subscribe to our Newsletter
+                    </button>
                 </div>
+
+                
             </div>
+
+            
         </section>
 
         <!-- Featured Items section -->
@@ -170,11 +179,54 @@
         </section>
 
         <!-- Testimonials section -->
-        <section class="bg-color-brown">
-            <div class="container section "></div>
+        <section class="bg-color-brown pb-4">
+            <div class="container section ">
                 <div class="row">
                     <div class="col-12 text-center">
                         <h2 class="display-6">Testimonials</h2>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="swiper testimonial-swiper">
+                            <div class="swiper-wrapper">
+
+                                <!-- Testimonial 1 -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card">
+                                        <p class="testimonial-text">
+                                            “The cupcakes were absolutely stunning and tasted even better than they looked.
+                                            Butter & Bloom made my daughter’s birthday unforgettable.”
+                                        </p>
+                                        <h5 class="testimonial-name">— Sarah L.</h5>
+                                    </div>
+                                </div>
+
+                                <!-- Testimonial 2 -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card">
+                                        <p class="testimonial-text">
+                                            “Their floral‑pressed cookies are my favourite treat. Beautiful, delicate, and perfect
+                                            for gifting. Highly recommend!”
+                                        </p>
+                                        <h5 class="testimonial-name">— Priya M.</h5>
+                                    </div>
+                                </div>
+
+                                <!-- Testimonial 3 -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card">
+                                        <p class="testimonial-text">
+                                            “I ordered a custom cake and it exceeded every expectation. The design, flavour,
+                                            and service were all exceptional.”
+                                        </p>
+                                        <h5 class="testimonial-name">— James R.</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,7 +236,6 @@
         <div class="col-12 text-center">
             <a href="order.html" class="btn custom-cta-button mb-4">Order Now</a>
         </div>
-
 
 
     </main>
@@ -245,10 +296,39 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
 
     </footer>
+
+    <!-- Newsletter Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="newsletterLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content  py-4 px-4 ">
+        <!-- Body -->
+            <div class="modal-body text-center">
+                <div class="text-end">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h1 class="modal-title display-6 text-color-red" id="newsletterLabel">Subscribe to Our Newsletter</h1>
+                
+                <p class="my-4">Sign up to receive <strong>exclusive discounts</strong>, early access to <strong>limited‑time items</strong>, and sweet updates from Butter & Bloom.</p>
+
+                <form id="newsletterForm">
+                <div class="mb-3 text-start">
+                    <label for="newsletterEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="newsletterEmail" placeholder="you@example.com" required>
+                </div>
+                </form>
+
+                <button type="submit" form="newsletterForm" class="btn custom-cta-button">Subscribe</button>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -280,6 +360,36 @@
             992: { slidesPerView: 3 },
         },
     });
+    </script>
+    
+    <script>
+        const testimonialSwiper = new Swiper('.testimonial-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 3,
+            }
+        }
+    });
+    </script>
+
+
+    <script>
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+        })
     </script>
 
 
