@@ -14,6 +14,9 @@
     <!-- Bootstrap 5 CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- Swiper CSS CDN Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -51,41 +54,68 @@
 
     <!-- Main -->
     <main>
-        <!-- About Us section -->
-        <section class="container">
-            <div class="row">
-                <div class="col-12"></div>
-            </div>
+        <!-- Gallery section 1 -->
+        <section class="bg-color-green">
+            <div class="container gallery-section">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <h2>Title</h2>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-8">
+                        <div class="swiper expanding-swiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                <img src="assets/images/home/featured-items-cake.png" class="expanding-img">
+                                </div>
+
+                                <div class="swiper-slide">
+                                <img src="assets/images/home/featured-items-cheesecake.jpg" class="expanding-img">
+                                </div>
+
+                                <div class="swiper-slide">
+                                <img src="assets/images/home/featured-items-cookies.png" class="expanding-img">
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                </div>
+                </div>
         </section>
 
-        <!-- Featured Items section -->
-        <section class="container">
-            <div class="row">
-                <div class="col-12"></div>
+
+        <!-- Gallery section 2 -->
+        <section class="container section">
+            <div class="row justify-content-center align-items-center d-flex flex-row-reverse">
+                <div class="col-12 col-md-6 col-lg-4 text-center">
+                    <h2>Title</h2>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="swiper expanding-swiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                            <img src="assets/images/home/featured-items-cake.png" class="expanding-img">
+                            </div>
+
+                            <div class="swiper-slide">
+                            <img src="assets/images/home/featured-items-cheesecake.jpg" class="expanding-img">
+                            </div>
+
+                            <div class="swiper-slide">
+                            <img src="assets/images/home/featured-items-cookies.png" class="expanding-img">
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
             </div>
         </section>
-
-        <!-- Opening Times section -->
-        <section id="openingt-imes" class="container">
-            <div class="row">
-                <div class="col-12"></div>
-            </div>
-        </section>
-
-        <!-- Seasonal Items section -->
-        <section class="container">
-            <div class="row">
-                <div class="col-12"></div>
-            </div>
-        </section>
-
-        <!-- Testimonials section -->
-        <section class="container">
-            <div class="row">
-                <div class="col-12"></div>
-            </div>
-        </section>
-
 
 
     </main>
@@ -156,6 +186,38 @@
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/3a3514d451.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+    new Swiper(".expanding-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 600, // smoother transitions
+        effect: "slide",
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 3000, // 3 seconds
+            disableOnInteraction: false
+        },
+        breakpoints: {
+            // 768: { slidesPerView: 2 },
+            992: { slidesPerView: 2 },
+        },
+        on: { /*Pause on hover*/
+        init() {
+            const swiperEl = this.el;
+            swiperEl.addEventListener("mouseenter", () => this.autoplay.stop());
+            swiperEl.addEventListener("mouseleave", () => this.autoplay.start());
+        } 
+    }
+    });
+    </script>
+
     
 </body>
 </html>
