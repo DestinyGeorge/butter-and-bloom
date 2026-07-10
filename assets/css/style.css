@@ -65,6 +65,10 @@ h2{
     color: var(--accent-color-base);
 }
 
+.text-color-white{
+    color: var(--neutral-color-light);
+}
+
 .section {
     margin-top: 2rem;
     margin-bottom: 2rem;
