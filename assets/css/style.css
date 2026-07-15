@@ -30,7 +30,6 @@
 
 body{
     font-family: var(--primary-font);
-    /* background-color: #FFFFFF; */
     color: var(--neutral-color-dark);
 }
 
@@ -70,8 +69,6 @@ h2{
 }
 
 .section {
-    /* margin-top: 2rem;
-    margin-bottom: 2rem; */
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -118,13 +115,11 @@ h2{
 
 .hero {
     height: 100vh; /*full screen height */
-    /* width: 100%; */
-    background-image: url('../images/hero-image.png');
+    background-image: url('../images/home/hero-image.jpg');
     background-size: cover; /* makes image cover the whole hero */
     background-position: center;
     background-repeat: no-repeat;
-    /* display: flex;
-    align-items: center; */
+
 }
 
 .hero-container{
@@ -145,14 +140,11 @@ h2{
 
 .subscribe-button{
     border: 2px solid rgba(181, 213, 198, 0.55);
-    /* background-color: rgba(181, 213, 198, 0.55); */
     color: var(--primary-color-base);
     transition: color 0.3s ease-in-out;
 }
 
 .subscribe-button:hover{
-    /* border: 2px solid rgba(150, 105, 25, 0.35);
-    background-color: rgba(150, 105, 25, 0.35); */
     border: 2px solid rgba(181, 213, 198, 0.55);
     background-color: rgba(181, 213, 198, 0.55);
     color: var(--primary-color-base);
@@ -358,39 +350,6 @@ h2{
     font-family: var(--primary-font);
 }
 
-/* grid visualisation CSS for testing */
-
-/* .container,
-.row {
-    border: 2px solid black;
-}
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-} */
-
-/* Media queries */
-/* @media (max-aspect-ratio: 3/4) {
-  .hero {
-    background-size: contain;
-    background-color: #fdf8f2;
-    background-repeat: no-repeat;
-  }
-} */
-
-/* @media (max-height: 700px) {
-  .hero {
-    height: 80vh;
-  }
-}
-
-@media (max-height: 550px) {
-    .hero {
-    height: 65vh;
-  }
-    
-} */
 
 /* Extra small devices (tablets, 576px and below) */
 @media screen and (max-width: 576px) {
